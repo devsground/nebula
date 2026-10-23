@@ -2,6 +2,8 @@
 
 Landing page for **Nebula**, the Android app that streams from BDIX media servers.
 
+Live at https://nebula-bdix.vercel.app
+
 Plain static site (HTML, CSS, a few lines of JS), no build step.
 
 ## Deploy on Vercel
