@@ -5,7 +5,7 @@ onScroll();
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const targets = document.querySelectorAll(".card, .shot, .pv, .faq, .stats, .split, .cta-card, .section-head");
+const targets = document.querySelectorAll(".card, .pv, .faq, .stats, .split, .cta-card, .section-head");
 if ("IntersectionObserver" in window) {
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {
