@@ -32,6 +32,7 @@
       </a>
       <nav class="nav-links" aria-label="Sections">
         <a href="#features">Features</a>
+        <a href="#tour">Tour</a>
         <a href="#how">How it works</a>
         <a href="#servers">Servers</a>
         <a href="#faq">FAQ</a>
@@ -46,7 +47,7 @@
       <div class="hero-copy">
         <span class="pill"><span class="dot"></span> Android · free · no account</span>
         <h1>Every BDIX server.<br><span class="grad-text">One catalogue.</span></h1>
-        <p class="lead">Nebula finds the media servers your ISP already hosts, ranks them by live ping, merges their libraries into one Netflix-style app and plays straight from the fastest one. Full local speed, no buffering.</p>
+        <p class="lead">Nebula finds the media servers your ISP already hosts, ranks them by live ping, merges their libraries into one clean streaming app and plays straight from the fastest one. Full local speed, no buffering.</p>
         <div class="cta-row">
           <a class="btn btn-grad" href="#download">
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
@@ -66,7 +67,7 @@
           <div class="screen">
             <div class="s-top">
               <div class="s-logo"><img src="/favicon.svg" alt=""><span>Nebula</span></div>
-              <div class="s-server"><span class="ok-dot"></span>DhakaFlix · 6 ms</div>
+              <div class="s-server"><span class="ok-dot"></span><span id="route">Server 1 · 6 ms</span></div>
             </div>
             <div class="s-chips"><span class="on">Movies</span><span>TV Shows</span><span>Live TV</span><span>Files</span></div>
             <div class="s-hero">
@@ -97,10 +98,10 @@
         </div>
         <div class="float f-ping">
           <div class="f-label">Fastest route</div>
-          <div class="f-rows">
-            <div><span>DhakaFlix</span><span class="ok">6 ms</span></div>
-            <div><span>CircleFTP</span><span class="ok">14 ms</span></div>
-            <div><span>Taltola Emby</span><span class="warn">88 ms</span></div>
+          <div class="f-rows" id="pings">
+            <div><span>Server 1</span><span class="ok">6 ms</span></div>
+            <div><span>Server 2</span><span class="ok">14 ms</span></div>
+            <div><span>Server 3</span><span class="warn">88 ms</span></div>
           </div>
         </div>
         <div class="float f-merge">
@@ -159,6 +160,79 @@
       </div>
     </section>
 
+    <!-- Tour -->
+    <section id="tour" class="section wrap">
+      <div class="section-head">
+        <span class="eyebrow">Inside the app</span>
+        <h2>Everything in five tabs</h2>
+        <p>Home, Anime, Search, TV and My List. Here are a few of the screens.</p>
+      </div>
+      <div class="tour" aria-label="App screens">
+        <figure class="shot">
+          <div class="mini" aria-hidden="true">
+            <div class="m-head anime"><span class="m-word">Anime</span><span class="m-icon"></span></div>
+            <div class="m-feat">
+              <span class="m-chip">#1 Trending</span>
+              <div class="m-feat-row"><div class="m-post p4"></div><div><b>Star Drifters</b><small>TV · Fall 2026</small><span class="m-rate">★ 8.6</span></div></div>
+            </div>
+            <div class="m-sec"><i></i>Airing next</div>
+            <div class="m-cards">
+              <div><div class="m-post p5"></div><small class="cyan">in 1h 10m</small></div>
+              <div><div class="m-post p6"></div><small class="cyan">in 4h 32m</small></div>
+              <div><div class="m-post p1"></div><small class="cyan">in 9h 05m</small></div>
+            </div>
+            <div class="m-sec"><i></i>On your BDIX servers</div>
+            <div class="m-banner">2,000+ titles · full speed</div>
+          </div>
+          <figcaption><b>Anime hub</b>Trending shows, countdowns to new episodes, and what's already on your servers.</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="mini" aria-hidden="true">
+            <div class="m-head"><span class="m-title">Search</span><small>Across 12 servers</small></div>
+            <div class="m-field">⌕&nbsp; orbit</div>
+            <div class="m-chips"><span class="on">All 18</span><span>Server 1 · 9</span><span>Server 2 · 6</span></div>
+            <div class="m-grid">
+              <div class="m-post p4"><em>3 servers</em></div><div class="m-post p2"></div><div class="m-post p6"><em>2 servers</em></div>
+              <div class="m-post p3"></div><div class="m-post p5"><em>4 servers</em></div><div class="m-post p1"></div>
+            </div>
+            <small class="m-note">Still searching 2 more servers…</small>
+          </div>
+          <figcaption><b>One search, every server</b>Results stream in as each server answers, merged by title.</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="mini" aria-hidden="true">
+            <div class="m-head"><span class="m-title">Live TV</span><small>75 live on your network</small></div>
+            <div class="m-chips"><span class="on">All</span><span>News</span><span>Sports</span><span>Music</span></div>
+            <ul class="m-list">
+              <li><span class="m-logo l1">N1</span><b>News One</b><span class="live">● LIVE</span></li>
+              <li><span class="m-logo l2">SP</span><b>Sports HD</b><span class="live">● LIVE</span></li>
+              <li><span class="m-logo l3">MU</span><b>Music Live</b><span class="live">● LIVE</span></li>
+              <li><span class="m-logo l4">KZ</span><b>Kids Zone</b><span class="live">● LIVE</span></li>
+              <li><span class="m-logo l6">ED</span><b>Edu Channel</b><span class="live">● LIVE</span></li>
+              <li><span class="m-logo l1">BN</span><b>Bangla News</b><span class="live">● LIVE</span></li>
+              <li class="dead"><span class="m-logo l5">DR</span><b>Drama Plus</b><span>offline</span></li>
+            </ul>
+          </div>
+          <figcaption><b>Live TV</b>Channels are pinged on your connection. Live ones come first, dead ones are dimmed.</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="mini" aria-hidden="true">
+            <div class="m-head"><span class="m-title">My List</span></div>
+            <div class="m-seg"><span>My List</span><span>History</span><span class="on">Downloads</span></div>
+            <ul class="m-dl">
+              <li><div class="m-thumb p2"></div><div><b>Midnight Orbit</b><small>1.8 GB · Downloaded</small><span class="bar full"></span></div></li>
+              <li><div class="m-thumb p3"></div><div><b>The Long Night · S1 E5</b><small>420 of 610 MB</small><span class="bar" style="--w:68%"></span></div></li>
+              <li><div class="m-thumb p6"></div><div><b>The Long Night · S1 E6</b><small>Paused · resumes when online</small><span class="bar" style="--w:22%"></span></div></li>
+              <li><div class="m-thumb p5"></div><div><b>Star Drifters · E12</b><small>380 MB · Downloaded</small><span class="bar full"></span></div></li>
+              <li><div class="m-thumb p1"></div><div><b>Harbour Lights</b><small>Queued</small><span class="bar" style="--w:0%"></span></div></li>
+            </ul>
+            <div class="m-store"><span>Storage</span><b>2.6 GB used</b></div>
+          </div>
+          <figcaption><b>Downloads</b>Save a film or a whole season and watch it with no connection.</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <!-- Player highlight -->
     <section class="section wrap split">
       <div class="split-copy">
@@ -168,12 +242,12 @@
           <li>Resumes from where you stopped, on any server</li>
           <li>Auto-plays the next episode</li>
           <li>Double-tap to skip 10 s, swipe for brightness and volume</li>
-          <li>Audio and subtitle tracks, sidecar <code>.srt</code> files</li>
+          <li><span>Audio and subtitle tracks, sidecar <code>.srt</code> files</span></li>
           <li>Playback speed, zoom to fill, control lock</li>
         </ul>
       </div>
       <div class="player" aria-hidden="true">
-        <div class="pl-top"><span>‹ The Long Night · S1 E4</span><span class="pl-pill">CircleFTP · 1080p</span></div>
+        <div class="pl-top"><span>‹ The Long Night · S1 E4</span><span class="pl-pill">Server 2 · 1080p</span></div>
         <div class="pl-mid"><span>↺10</span><span class="pl-play">❚❚</span><span>10↻</span></div>
         <div class="pl-bot">
           <div class="pl-bar"><b></b></div>
@@ -212,13 +286,20 @@
       <div class="section-head">
         <span class="eyebrow">Supported servers</span>
         <h2>Speaks every BDIX dialect</h2>
-        <p>Whatever software your ISP's server runs, Nebula has an adapter for it.</p>
+        <p>Media-server APIs, browsable file indexes and plain folder listings. Whatever software your ISP's server runs, Nebula has an adapter for it.</p>
       </div>
-      <div class="grid servers">
-        <div class="srv"><span class="srv-badge">CF</span><div><h3>CircleFTP API</h3><p>Shelves, search, seasons and episodes</p></div></div>
-        <div class="srv"><span class="srv-badge">h5</span><div><h3>h5ai folders</h3><p>DhakaFlix-style listings, posters and subtitles</p></div></div>
-        <div class="srv"><span class="srv-badge">Em</span><div><h3>Emby / Jellyfin</h3><p>Public-user login, newest shelves, series</p></div></div>
-        <div class="srv"><span class="srv-badge">/</span><div><h3>Index of /</h3><p>Apache and nginx autoindex browsing</p></div></div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section wrap">
+      <div class="section-head">
+        <span class="eyebrow">Privacy</span>
+        <h2>Nothing to sign up for</h2>
+      </div>
+      <div class="grid privacy">
+        <div class="pv"><span class="pv-ico">◎</span><h3>No account</h3><p>Open the app and start watching. No login, email or phone number.</p></div>
+        <div class="pv"><span class="pv-ico">⌂</span><h3>Stays on your phone</h3><p>My List, watch history, searches and downloads are saved on the device only.</p></div>
+        <div class="pv"><span class="pv-ico">⇄</span><h3>Straight from the server</h3><p>Video streams directly from your ISP's server to your phone. Nothing passes through us.</p></div>
       </div>
     </section>
 
