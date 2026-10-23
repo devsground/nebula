@@ -1,4 +1,4 @@
-# vercel-nebula
+# Nebula website
 
 Landing page for **Nebula**, the Android app that streams from BDIX media servers.
 
@@ -23,4 +23,4 @@ npx serve .
 - `favicon.svg`: the app mark
 - `vercel.json`: clean URLs and cache headers
 
-The "Download" buttons point to this repo's latest GitHub Release. Attach the APK to a release to make them work.
+The download buttons point to `releases/latest/download/nebula.apk`. To ship a new version, publish a GitHub Release with the APK attached as `nebula.apk`; the links follow it automatically.

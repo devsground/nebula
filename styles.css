@@ -313,3 +313,4 @@ h3 { font-size: 18px; font-weight: 700; letter-spacing: -.01em; }
   .float { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+.small.link { margin-top: 6px; color: var(--text2); text-decoration: underline; text-underline-offset: 3px; }
