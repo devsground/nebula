@@ -23,4 +23,6 @@ npx serve .
 - `favicon.svg`: the app mark
 - `vercel.json`: clean URLs and cache headers
 
-The download buttons point to `releases/latest/download/nebula.apk`. To ship a new version, publish a GitHub Release with the APK attached as `nebula.apk`; the links follow it automatically.
+- `nebula.apk`: the app, served by Vercel at `/nebula.apk`
+
+The download buttons point to `/nebula.apk`. To ship a new version, replace `nebula.apk` in the repo root, bump the version in `index.html` (the `download` filename and the "Version 0.2.0" line) and in the `Content-Disposition` header in `vercel.json`, then redeploy.
